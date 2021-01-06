@@ -1,0 +1,10 @@
+.dropdown-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+
+  .label,
+  .select {
+    width: 50%;
+  }
+}

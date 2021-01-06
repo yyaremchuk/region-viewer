@@ -1,0 +1,26 @@
+<ng-container *ngIf="country">
+  <div class="row">
+    <div class="key">Name</div>
+    <div class="value">{{ country.name }}</div>
+  </div>
+
+  <div class="row">
+    <div class="key">Capital</div>
+    <div class="value">{{ country.capital }}</div>
+  </div>
+
+  <div class="row">
+    <div class="key">Population</div>
+    <div class="value">{{ country.population | number }}</div>
+  </div>
+
+  <div class="row">
+    <div class="key">Currencies</div>
+    <div class="value">{{ country.currencies | array: 'code' }}</div>
+  </div>
+
+  <div class="row">
+    <div class="key">Flag</div>
+    <div class="value"><img [src]="country.flag" /></div>
+  </div>
+</ng-container>

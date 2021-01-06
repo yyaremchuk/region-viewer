@@ -1,0 +1,15 @@
+<div class="regions-wrapper">
+  <app-dropdown
+    label="Region"
+    [items]="regions$ | async"
+    (select)="onRegionChange($event)"
+    [value]="selectedRegionName$ | async"
+  ></app-dropdown>
+  <app-dropdown
+    label="Country"
+    [items]="countries$ | async"
+    (select)="onCountryChange($event)"
+    [disabled]="countryDisabled$ | async"
+    [value]="selectedCountryName$ | async"
+  ></app-dropdown>
+</div>

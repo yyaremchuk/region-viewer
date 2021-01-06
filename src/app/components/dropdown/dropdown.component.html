@@ -1,0 +1,19 @@
+<div class="dropdown-wrapper">
+  <div class="label">
+    {{ label }}
+  </div>
+  <div class="select">
+    <select
+      [id]="label"
+      [name]="label"
+      (input)="onChange($event.target.value)"
+      [disabled]="disabled"
+      [value]="value"
+    >
+      <option value="null" disabled selected>Select {{ label }}</option>
+      <option *ngFor="let item of items" [value]="item">
+        {{ item }}
+      </option>
+    </select>
+  </div>
+</div>
