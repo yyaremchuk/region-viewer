@@ -9,6 +9,11 @@ export const selectRegions = createSelector(
   (state: IAppState) => state.regions
 );
 
+export const selectCountriesByRegion = createSelector(
+  selectFeature,
+  (state: IAppState) => state.countriesByRegion
+);
+
 export const selectLoading = createSelector(
   selectFeature,
   (state: IAppState) => state.loading

@@ -2,6 +2,6 @@ export interface ICountry {
   name: string;
   capital: string;
   population: number;
-  curruncies: Array<string>;
+  curruncies: Array<{ code: string }>;
   flag: string;
 }

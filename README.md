@@ -2,26 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## Development server
+1. Style guide
+   I kept some styling provided by Angular CLI.
+   For layout I used flex-box to make the page responsive.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. CSS coding standard
+   I used Google HTML/CSS Style Guide
 
-## Code scaffolding
+3. Installation instructions
+   To install and run the app follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3.1 Clone the GitHub repo
+3.2 In the project folder run 'npm install'
+3.3 Run 'ng serve'
+3.4 Use 'ng test' command to run unit tests
 
-## Build
+4. How the application works
+   When the page is loaded there are 2 drop downs: one for region with 2 options (Europe and Asia)
+   and another one for selecting country (initially disabled).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+When user selects a region the API call is triggered to fetch the list of countries.
+If countries have been loaded already then API call is skipped.
 
-## Running unit tests
+When user selects the country from the second dropdown country related information displayed below in a simple table format.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. What else I would have done
+   If I have enough time I would add more unit tests to cover NGRX and components.
