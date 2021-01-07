@@ -11,10 +11,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 3. Installation instructions
    To install and run the app follow these steps:
-   3.1. Clone the GitHub repo
-   3.2. In the project folder run 'npm install'
-   3.3. Run 'ng serve'
-   3.4. Use 'ng test' command to run unit tests
+
+   - Clone the GitHub repo
+   - In the project folder run 'npm install'
+   - Run 'ng serve'
+   - Use 'ng test' command to run unit tests
 
 4. How the application works
    When the page is loaded there are 2 drop downs: one for region with 2 options (Europe and Asia)
