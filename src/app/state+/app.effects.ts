@@ -14,6 +14,8 @@ export class AppEffects {
       ofType(AppActions.selectRegion),
       withLatestFrom(this.store.select(selectCountriesByRegion)),
       mergeMap(([action, countriesByRegion]) => {
+        console.log('aaa', countriesByRegion);
+
         // if countries for selected region have been loaded before
         if (countriesByRegion[action.region]) {
           return EMPTY;
