@@ -27,4 +27,6 @@ If countries have been loaded already then API call is skipped.
 When user selects the country from the second dropdown country related information displayed below in a simple table format.
 
 5. What else I would have done
-   If I have enough time I would add more unit tests to cover NGRX and components.
+   If I have enough time I would:
+   - add more unit tests to cover NGRX and components;
+   - add proper error handling (extract useful information from the error object, set in to the store and then display on the page)

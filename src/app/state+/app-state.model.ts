@@ -8,4 +8,5 @@ export interface IAppState {
   selectedCountry: string;
 
   loading: boolean;
+  error: any;
 }

@@ -30,7 +30,7 @@ export class AppEffects {
       mergeMap((action) =>
         this.countryService.getCountries(action.region).pipe(
           map((countries) => AppActions.countriesLoaded({ countries })),
-          catchError(() => EMPTY)
+          catchError((error) => of(AppActions.loadCountriesFailed({ error })))
         )
       )
     )

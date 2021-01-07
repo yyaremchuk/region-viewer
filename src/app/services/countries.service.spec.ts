@@ -36,7 +36,7 @@ describe('CountriesService', () => {
           name: 'Germany',
           capital: 'Berlin',
           population: 68234123,
-          curruncies: [{ code: 'EUR' }],
+          currencies: [{ code: 'EUR' }],
           flag: 'https://example.com/flag/de.svg',
         },
       ];

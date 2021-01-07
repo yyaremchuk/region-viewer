@@ -12,7 +12,7 @@ export const countriesLoaded = createAction(
   props<{ countries: Array<ICountry> }>()
 );
 
-export const loadMoviesFailed = createAction(
+export const loadCountriesFailed = createAction(
   AppActionTypes.LOAD_COUNTRIES_FAILED,
   props<{ error: any }>()
 );
